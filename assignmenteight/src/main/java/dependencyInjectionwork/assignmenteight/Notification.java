@@ -10,4 +10,8 @@ public class Notification implements CommandLineRunner {
     public Notification(MessageService service) {
         this.service = service;
     }
+    @Override
+    public void run(String[] args) {
+        service.send("Good morning, Mr Kato!");
+    }
 }
