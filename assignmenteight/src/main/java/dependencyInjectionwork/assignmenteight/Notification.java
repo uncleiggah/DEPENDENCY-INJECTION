@@ -5,4 +5,5 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 @Component
 public class Notification implements CommandLineRunner {
+    private final MessageService service;
 }
